@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Journal of Asia Business Service Innovation (ABSI)</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Font Awesome for search icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <div class="cover">
+          <div class="cover-img">
+            <img src="./assets/ABSI.jpg" alt="ABSI Journal Cover" />
+          </div>
+        </div>
+        <div class="title-block">
+          <h1>Asia Business Service Innovation</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Primary nav -->
+    <nav class="primary-nav">
+      <div class="container nav-inner">
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li class="mobile-close-btn">
+            <button class="close-nav-menu">&times;</button>
+          </li>
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle">Articles & Issues <span class="dropdown-indicator"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" data-target="latest">Latest Issue</a></li>
+              <li><a href="#" data-target="all-issues">All Issues</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle">About <span class="dropdown-indicator"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" id="aims&scope">Aims and Scope</a></li>
+              <li><a href="#" id="editorial-board-link">Editorial Board</a></li>
+              <li><a href="#" id="announcement-link">Announcement</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Publish <span class="dropdown-indicator"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#" id="openAuthorGuide" class="btn-link">Guide for Author</a>
+                <!-- <ul class="dropdown-menu">
+                  <li><a href="./assets/Document/ABSI Format.doc">Manuscript Template</a></li>
+                </ul> -->
+              </li>
+              <li><a href="#" class="btn-link" id="openCallForPapers">Call for Paper</a></li>
+              <li><a href="#" class="btn-link" id="openReviewRegulations">Review Regulations</a></li>
+              <li><a href="#" class="btn-link" id="openResearchEthics">Research Ethics Regulations</a></li>
+            </ul>
+          </li>
+          <li>
+            <div>
+              <div class="search-bar">
+                <input type="text" placeholder="Search in ABSI Journal" />
+                <button type="submit" class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+          </li>
+          <li class="right-links"><a href="#">Submit your article</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Search Bar (outside navigation) -->
+    <div class="mobile-search-container">
+      <div class="mobile-search">
+        <input type="text" placeholder="Search in ABSI Journal" />
+        <button type="submit" class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <main class="container main">
+      <!-- About -->
+      <section id="about">
+        <div class="about">
+          <div class="about-details">
+            <h2>About the Journal <a href="#" class="view-details-btn" id="viewDetails">View Details</a></h2>
+            <p>
+              <strong>Asia Business and Service Innovation (ABSI)</strong> is a peer-reviewed academic journal
+              thatexplores the latest
+              developments in business, management, and economic practices within Asia and its global
+              connections.Published
+              <strong> twice a year</strong> (June and December), ABSI provides a platform for <strong>researchers,
+                practitioners,and policymakers </strong>to
+              share innovative ideas and impactful research that shape Asia's role in the global economy.
+            </p>
+            <p><strong>ABSI</strong> is committed to fostering a diverse and inclusive academic community. We encourage
+              submissions from authors of all backgrounds and experiences.
+              The journal welcomes contributions in areas such as <strong>international business, marketing, tourism,
+                finance,
+                entrepreneurship, innovation, leadership, and sustainability.</strong> Committed to academic excellence
+              and ethical
+              standards, all submissions undergo a double-blind peer review in accordance with <strong>COPE</strong>
+              guidelines.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Editor-in-Chief -->
+      <section class="editor-band">
+        <div class="container editor-inner">
+          <div class="editor-left">
+            <div class="avatar">
+              <img src="./assets/editor-in-chief.jpg" alt="Professor Hak Seon Kim">
+            </div>
+          </div>
+          <div class="editor-right">
+            <h3>Editor-in-Chief &nbsp; |<span id="view-editorial-board">view full editorial board</span></h3>
+            <p><strong>Professor Hak Seon Kim, PhD</strong><br>
+              Dean, Kyungsung University Global College (KSGC)<br>
+              PhD, Texas Tech University, USA<br>
+              MA, Seoul National University, Korea</p>
+          </div>
+        </div>
+      </section>
+
+      <!--Editorial Board Section-->
+      <!-- ===== EDITORIAL BOARD MODAL ===== -->
+      <div class="about-detailed" id="editorialBoardModal">
+        <div class="about-modal">
+          <button class="close-btn1" id="closeEditorialBoard">&times;</button>
+          <h2>Editorial Board</h2>
+          <p>The <strong>Asia Business and Service Innovation (ABSI)</strong> editorial team consists of distinguished
+            academics and professionals committed to maintaining the highest standards of research integrity, academic
+            quality, and publication ethics.</p>
+          <hr>
+
+          <h3>Editor-in-Chief</h3>
+          <p><strong>Hak-Seon Kim</strong> – Kyungsung University, South Korea</p>
+
+          <h3>Associate Editor</h3>
+          <ul>
+            <li>Hyeon-Jeong Helena Ban – Kyungsung University, South Korea</li>
+            <li>Jue Wang – Kyungsung University, South Korea</li>
+          </ul>
+
+          <h3>Editorial Secretary</h3>
+          <p><strong>Angellie Williady</strong> – Kyungsung University, South Korea</p>
+
+          <h3>Editorial Assistant</h3>
+          <p><strong>Chanmi Hong</strong> – Kyungsung University, South Korea</p>
+
+          <h3>Advisory Board</h3>
+          <p><strong>Timothy Jeonglyeol Lee</strong> – Macau University of Science and Technology, Macau</p>
+          <hr>
+
+          <h3>Editorial Board Members</h3>
+          <div class="associate-editors-grid">
+            <div>
+              <p>Hyo Jin Kim – Mokpo University, South Korea</p>
+              <p>Yaeji Kim – Dongeui University, South Korea</p>
+              <p>Armigon Akhmedov – Dongeui University, South Korea</p>
+              <p>Jisu Han – Chodang University, South Korea</p>
+              <p>Sang Hyeop Lee – Keimyung University, South Korea</p>
+              <p>Sang Mook Lee – Jeju University, South Korea</p>
+              <p>Je Eun Yoo – Injae University, South Korea</p>
+              <p>Yahaira Lisbeth Moreno Brito – Kyungsung University, South Korea</p>
+              <p>Kumkum – Kyungsung University, South Korea</p>
+              <p>Seieun Kim – Kyungsung University, South Korea</p>
+              <p>Aura Lydia Riswanto – Kyungsung University, South Korea</p>
+            </div>
+            <div>
+              <p>Jong Ho Lee – Kyungsung University, South Korea</p>
+              <p>Narariya Dita Handani – Wijaya Kusuma University, Indonesia</p>
+              <p>Do Thi Xuan Dung – Hue University, Vietnam</p>
+              <p>Shuting Tao – Henan Normal University, China</p>
+              <p>Xiaobin Zhang – Shanxi Vocational University of Culture and Tourism, China</p>
+              <p>Jun Yu – Huangshan University, China</p>
+              <p>Hayeon Choi – Texas Tech University, USA</p>
+              <p>Jinwon Kim – University of Florida, USA</p>
+              <p>Harold S Lee – University of North Texas, USA</p>
+              <p>Eun Kyong Choi – The University of Mississippi, USA</p>
+              <p>Hyun-woo Joung – The University of Mississippi, USA</p>
+              <p>Min Hwa Lee – Osaka Seikei University, Japan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Articles -->
+      <section class="articles">
+        <div class="articles-header">
+          <h2>Articles <span class="underline"></span></h2>
+
+          <div class="tabs">
+            <button class="tab-btn active" id="all-articles-btn" data-target="all-issues">All Issue</button>
+            <button class="tab-btn " data-target="latest">Latest</button>
+            <button class="tab-btn" data-target="upcoming">Upcoming</button>
+          </div>
+        </div>
+
+        <div class="articles-grid">
+          <div class="tab-content hidden" id="latest">
+
+            <article class="article-card">
+              <div class="tag">Research Article · Open Access</div>
+              <h4>Comparative Perceptions of Korean Fine Dining: A Big Data Analysis of
+                Michelin-Starred Restaurants in and outside the USA</h4>
+              <p class="authors">Ja Yeon Cho, Angellie Williady, Hak-Seon Kim</p>
+              <p class="abstract">In today’s digital era, millions of diners share their experiences online, creating
+                vast datasets
+                that reveal how consumers perceive global cuisines.......</p>
+              <a class="pdf" href="./assets/Document/AB2506001.pdf">View PDF</a>
+            </article>
+            <article class="article-card">
+              <div class="tag">Research Article · Open Access</div>
+              <h4>Big Data Exploration of India’s Heritage Tourism: Understanding Visitor
+                Experiences </h4>
+                <p class="authors">Sadaf Akhtar, Angellie Williady, Narariya Dita Handani</p>
+                <p class="abstract">India’s rich cultural heritage and remarkable architectural landmarks establish it
+                  as
+                  one of the
+                  leading destinations for heritage tourism, showcasing iconic sites such as the City Palace,
+                  Amber Fort in Jaipur, and Gwalior Fort.....</p>
+                <a class="pdf" href="./assets/Document/AB2506002.pdf">View PDF</a>
+            </article>
+            <article class="article-card">
+              <div class="tag">Research Article · Open Access</div>
+              <h4>Visual Factors Influencing Booking Intention on Online Travel Agent Platforms</h4>
+              <p class="authors">Natasya Maurren Tan, Angellie Williady, Aura Lydia Riswanto, Agus Riyadi</p>
+              <p class="abstract">This study examines the influence of visual design elements on user attitudes and
+                booking
+                intentions within online travel agent (OTA) websites. Grounded in the Stimulus–Organism
+                Response (S-O-R) framework, it investigates how color (red and green text) and imagery
+                (human-centric versus scenery-centric) as visual stimuli shape users’ attitudes (organism) and
+                subsequent behavioral intentions (response).</p>
+              <a class="pdf" href="./assets/Document/AB2506003.pdf">View PDF</a>
+            </article>
+            <article class="article-card">
+              <div class="tag">Research Article · Open Access</div>
+              <h4>Effects of Visual Design Elements on Consumer Attention and Purchase
+                Intention in Café App</h4>
+              <p class="authors">Seieun Kim, Hak-Seon Kim, Timothy J. Lee</p>
+              <p class="abstract">With the number of coffee shops in South Korea now exceeding 100,000 and mobile
+                ordering
+                continuing to expand, café applications have become vital platforms for engaging consumers. </p>
+              <a class="pdf" href="./assets/Document/AB2506004.pdf">View PDF</a>
+            </article>
+            <article class="article-card">
+              <div class="tag">Research Article · Open Access</div>
+              <h4>Optimism and Proactive Habits: Predicting Academic Resilience and
+                Achievement</h4>
+              <p class="authors">Sulav Shrivastav, Aura Lydia Riswanto, Hak-Seon Kim, Jue Wang, Armigon
+                Akhmedov</p>
+              <p class="abstract">This study investigates the relationship between optimism, proactive habits, and
+                academic
+                resilience and achievement among university students. Grounded in the positive psychology
+                framework, it conceptualizes resilience as a mediating mechanism linking personal
+                dispositions to academic performance outcomes. </p>
+              <a class="pdf" href="./assets/Document/AB2506005.pdf">View PDF</a>
+            </article>
+            <article class="article-card">
+              <div class="tag">Research Article · Open Access</div>
+              <h4>Comparative Perceptions of Korean Fine Dining: A Big Data Analysis of
+                Michelin-Starred Restaurants in and outside the USA</h4>
+              <p class="authors">Ja Yeon Cho, Angellie Williady, Hak-Seon Kim</p>
+              <p class="abstract">In today’s digital era, millions of diners share their experiences online, creating
+                vast datasets
+                that reveal how consumers perceive global cuisines.......</p>
+              <a class="pdf" href="./assets/Document/AB2506001.pdf">View PDF</a>
+            </article>
+
+          </div>
+
+          <div class="tab-content hidden" id="upcoming">
+            <p class="muted">Upcoming accepted articles will appear here.</p>
+          </div>
+          <div class="tab-content " id="all-issues">
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>Comparative Perceptions of Korean Fine Dining: A Big Data Analysis of Michelin-Starred Restaurants in
+                and outside the USA.</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>Big Data Exploration of India’s Heritage Tourism: Understanding Visitor Experiences</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>Visual Factors Influencing Booking Intention on Online Travel Agent Platforms</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>Effects of Visual Design Elements on Consumer Attention and Purchase Intention in Café App</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>Optimism and Proactive Habits: Predicting Academic Resilience and Achievement</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>The Social Psychology of Adopting AI-Based Health Sensors: Insights from a Qualitative Study</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>AI-Based Recommendation System, FOMO, and Online Impulse Buying Behavior: An S-O-R Perspective</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>Modeling and Forecasting Monthly Domestic Tourism Expenditure through the SARIMAX Approach</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>Evaluating the Impact of High-Tech Features on Customer Satisfaction: Insight from Global Online
+                Review</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+            <article class="article-card">
+              <div class="tag">Review Article</div>
+              <h4>Vegetarian and Vegan Food Provision in Busan: Availability, Nutrition, and Satisfaction among
+                International Students</h4>
+              <a class="pdf" href="#">View PDF</a>
+            </article>
+
+          </div>
+
+          <!-- <div class="read-issue">
+            <a href="#" class="btn">Read Current Issue</a>
+          </div> -->
+      </section>
+
+      <!-- Calls for papers -->
+      <!-- <section class="calls">
+      <h3>Calls for Papers</h3>
+      <div class="calls-grid">
+        <div class="call-card">
+          <h4>Special Issue: Service Innovation in the Digital Era</h4>
+          <p>We invite submissions exploring digital transformation, AI, and service innovation in Asia. Deadline: 15
+            January 2026.</p>
+          <a href="#" class="small-link">View details</a>
+        </div>
+
+        <div class="call-card small">
+          <p>Explore all upcoming calls for papers and special issues.</p>
+          <a href="#" class="small-link">View all calls</a>
+        </div>
+      </div>
+    </section> -->
+
+      <!-- Special Issues -->
+      <!-- <section class="special-issues">
+      <h3>Special Issues and Article Collections</h3>
+      <div class="issues-grid">
+        <div class="issue">
+          <h4>Innovation and Sustainability in Asian Business</h4>
+          <p>August 2025</p>
+        </div>
+        <div class="issue">
+          <h4>Digital Experience and Consumer Behavior</h4>
+          <p>April 2025</p>
+        </div>
+      </div>
+      <div class="view-issues">
+        <a href="#" class="btn ghost">View all issues</a>
+      </div>
+    </section> -->
+    </main>
+    <div class="about-detailed" id="aboutModal">
+      <div class="about-modal">
+        <button class="close-btn1" id="closeModal">&times;</button>
+        <h2>Journal Overview</h2>
+        <p><strong>Name:</strong> Asia Business and Service Innovation (ABSI)</p>
+        <p><strong>Language:</strong> English</p>
+        <p><strong>Frequency:</strong> Twice a year (June and December)</p>
+        <p><strong>First Issue:</strong> 30 June 2025</p>
+        <p><strong>Format:</strong> Print and Online (Future Plan)</p>
+        <hr>
+
+        <h2>Aims and Scope</h2>
+        <p>
+          <em>Asia Business and Service Innovation (ABSI)</em> is a peer-reviewed academic journal devoted to advancing
+          the understanding of business, management, and economic practices within the dynamic and diverse contexts of
+          Asia
+          and its global linkages. <em>ABSI</em> serves as a leading platform for scholars, practitioners, and
+          policymakers
+          to exchange ideas, disseminate innovative research, and explore the evolving challenges and opportunities
+          shaping
+          Asia’s role in the global economy.
+        </p>
+        <p>
+          The journal welcomes high-quality original research articles, conceptual papers, case studies, and
+          comprehensive
+          reviews that contribute to theoretical advancement and practical knowledge across a wide range of disciplines,
+          including but not limited to:
+        </p>
+        <ul>
+          <li>International business and global strategy</li>
+          <li>Marketing, consumer behavior, and digital transformation</li>
+          <li>Tourism, hospitality, and service management</li>
+          <li>Finance, accounting, and investment</li>
+          <li>Innovation, entrepreneurship, and technology management</li>
+          <li>Strategic management, leadership, and organizational behavior</li>
+          <li>Sustainability, corporate governance, and business ethics</li>
+          <li>Policy, trade, and socio-economic development in Asian markets</li>
+        </ul>
+        <p>
+          <em>ABSI</em> emphasizes both academic rigor and practical relevance, encouraging interdisciplinary approaches
+          and
+          diverse methodological perspectives. The journal aims to foster meaningful dialogue between theory and
+          practice,
+          deepen understanding of Asia’s business environments, and contribute to shaping policies and strategies that
+          drive
+          innovation, growth, and collaboration in the global marketplace.
+        </p>
+        <hr>
+
+        <h2>Editorial Policy & Peer Review</h2>
+        <p>
+          All manuscripts undergo a <strong>double-blind peer review</strong> to maintain academic integrity and
+          quality.
+          ABSI strictly follows <strong>COPE guidelines</strong> and accepts only original, unpublished work.
+        </p>
+        <p>
+          Authors should prepare manuscripts using the <strong>APA 7th Edition</strong> referencing style and the
+          official
+          ABSI template.
+        </p>
+        <p>
+          <a href="./assets/Document/ABSI Format.doc" download>Download Manuscript Template</a>
+        </p>
+      </div>
+    </div>
+    <!-- ===== ANNOUNCEMENT MODAL ===== -->
+    <div class="about-detailed" id="announcementModal">
+      <div class="about-modal">
+        <button class="close-btn1" id="closeAnnouncement">&times;</button>
+        <h2>Announcements</h2>
+        <div class="announcement-content">
+          <div class="no-announcement">
+            <i class="fas fa-bullhorn"></i>
+            <p>There are no announcements at the moment.</p>
+            <p>Please check back later for updates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== GUIDE FOR AUTHORS MODAL ===== -->
+    <div class="about-detailed" id="authorGuideModal">
+      <div class="about-modal">
+        <button class="close-btn1" id="closeAuthorGuide">&times;</button>
+        <h2>Guide for Authors</h2>
+        <br>
+        <div class="author-guide-intro">
+          <p>
+            <strong>Asia Business and Service Innovation (ABSI)</strong> welcomes original, unpublished manuscripts that
+            make significant contributions to business, management, and economics within the Asian context. Authors are
+            encouraged to read the following guidelines carefully before submission.
+          </p>
+          <div class="download-template">
+            <a href="/assets/Document/ABSI Format.doc" download class="template-download-btn">
+              <i class="fas fa-download"></i> Download Manuscript Template
+            </a>
+          </div>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-file-alt"></i> 1. Manuscript Preparation</h3>
+          <p>Authors are required to use the official ABSI Manuscript Template (available for download on this website).
+            This ensures a consistent and professional format across all published articles.</p>
+          <ul class="spec-list">
+            <li><strong>Font:</strong> Times New Roman, size 12, line spacing 1.5</li>
+            <li><strong>Alignment:</strong> Justified, no modification to margins or layout</li>
+            <li><strong>File format:</strong> Microsoft Word (.docx) only — PDF submissions are not accepted</li>
+            <li><strong>Length:</strong> Manuscripts should not exceed 4,000 - 7,000 words, including tables, figures,
+              and references</li>
+          </ul>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-sitemap"></i> 2. Structure of the Paper</h3>
+          <p>The manuscript should be organized as follows:</p>
+          <ol class="structure-list">
+            <li><strong>Title of the Paper</strong> (max. 15 words)</li>
+            <li><strong>Author(s) and Affiliation(s)</strong></li>
+            <li><strong>Abstract</strong> – Up to 200 words summarizing purpose, methods, major findings, and
+              implications</li>
+            <li><strong>Keywords</strong> – 3–5 keywords in alphabetical order</li>
+            <li><strong>Main Sections</strong>
+              <ul>
+                <li>Introduction</li>
+                <li>Literature Review</li>
+                <li>Methodology</li>
+                <li>Results</li>
+                <li>Conclusion</li>
+              </ul>
+            </li>
+            <li><strong>References</strong> – Follow APA 7th edition referencing style</li>
+          </ol>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-heading"></i> 3. Headings and Subheadings</h3>
+          <div class="formatting-grid">
+            <div class="format-item">
+              <span class="format-level">Level 1 (Main Heading)</span>
+              <span class="format-spec">Bold, 12 pt, Title Case</span>
+            </div>
+            <div class="format-item">
+              <span class="format-level">Level 2 (Subheading)</span>
+              <span class="format-spec">Italic, 12 pt, Sentence case</span>
+            </div>
+            <div class="format-item">
+              <span class="format-level">Level 3 (Sub-subheading)</span>
+              <span class="format-spec">Regular, 12 pt, Sentence case</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-table"></i> 4. Tables and Figures</h3>
+          <ul class="spec-list">
+            <li>Number tables and figures consecutively (e.g., Table 1, Figure 1)</li>
+            <li>Table titles appear above, figure captions appear below</li>
+            <li>Use Times New Roman, 11 pt, centered alignment</li>
+            <li>Each table and figure must be cited in the text</li>
+          </ul>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-book"></i> 5. References</h3>
+          <p>All references must strictly follow the APA 7th Edition style:</p>
+          <div class="reference-example">
+            <p>Kim, H.-S. (2021). Smart tourism technologies and visitor experience in cultural destinations.
+              <em>Tourism Management</em>, 84, 104252. https://doi.org/10.xxxx/xxxxxx
+            </p>
+          </div>
+          <p>The reference list should be ordered alphabetically by the first author's surname, double-checked for
+            accuracy, and use consistent punctuation and italicization.</p>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-user-edit"></i> 6. Author Declarations</h3>
+          <p>The following sections must appear after the main text and before the references:</p>
+          <div class="declarations-grid">
+            <div class="declaration-item">Author Contributions (using CRediT taxonomy)</div>
+            <div class="declaration-item">Funding Statement</div>
+            <div class="declaration-item">Institutional Review Board Statement</div>
+            <div class="declaration-item">Informed Consent Statement</div>
+            <div class="declaration-item">Data Availability Statement</div>
+            <div class="declaration-item">Acknowledgments</div>
+            <div class="declaration-item">Conflicts of Interest</div>
+          </div>
+          <p>Each section should follow the standardized examples given in the template.</p>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-shield-alt"></i> 7. Ethical Standards</h3>
+          <p>ABSI follows the COPE (Committee on Publication Ethics) guidelines. All submissions must ensure:</p>
+          <ul class="spec-list">
+            <li>Originality and absence of plagiarism</li>
+            <li>Ethical approval for studies involving human or animal subjects</li>
+            <li>Proper disclosure of funding and conflict of interest</li>
+          </ul>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-paper-plane"></i> 8. Submission Guidelines</h3>
+          <ul class="spec-list">
+            <li>Submissions should be sent by email to <strong>jabsieditor@gmail.com</strong> with the subject line:<br>
+              <div class="email-subject">"ABSI Submission – [Author Name] – [Article Title]"</div>
+            </li>
+            <li>Include the following files:
+              <ol>
+                <li>Completed manuscript (in ABSI template)</li>
+                <li>Cover letter (briefly summarizing contribution and fit to journal)</li>
+              </ol>
+            </li>
+            <li>Author information should not appear in the manuscript file</li>
+          </ul>
+        </div>
+
+        <div class="guide-section">
+          <h3><i class="fas fa-search"></i> 9. Review and Publication Process</h3>
+          <ol class="process-list">
+            <li><strong>Initial screening</strong> for formatting and scope compliance</li>
+            <li><strong>Double-blind peer review</strong> by two or more independent reviewers</li>
+            <li><strong>Revision phase</strong> (authors must use Track Changes and a separate response sheet)</li>
+            <li><strong>Final decision</strong> by the editorial board</li>
+          </ol>
+        </div>
+
+        <div class="guide-section contact-section">
+          <h3><i class="fas fa-envelope"></i> 10. Contact Information</h3>
+          <div class="contact-card">
+            <h4>Editorial Office – Asia Business and Service Innovation (ABSI)</h4>
+            <div class="contact-email">
+              <i class="fas fa-envelope"></i>
+              <span>jabsieditor@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a href="/assets/Document/ABSI Format.doc" download class="btn primary">
+            <i class="fas fa-download"></i> Download Template
+          </a>
+          <button class="btn secondary"
+            onclick="location.href='mailto:jabsieditor@gmail.com?subject=ABSI Submission – [Article Title] – [Author Name]'">
+            <i class="fas fa-paper-plane"></i> Submit Manuscript
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ===== CALL FOR PAPERS MODAL ===== -->
+    <div class="about-detailed" id="callForPapersModal">
+      <div class="about-modal">
+        <button class="close-btn1" id="closeCallForPapers">&times;</button>
+        <h2>Call for Papers</h2>
+        <p><strong>Asia Business and Service Innovation (ABSI)</strong><br>
+          <strong>December 2025 Issue (Vol. 1, No. 2)</strong><br>
+          🗓️ Submission is now open!
+        </p>
+
+        <h3>Important Dates (December 2025 Issue)</h3>
+        <ul>
+          <li>Nov 16, 2025: Tentative Title Submission</li>
+          <li>Nov 30, 2025: Full Manuscript Submission</li>
+          <li>Dec 8, 2025: First Review Feedback</li>
+          <li>Dec 12, 2025: First Revision Deadline</li>
+          <li>Dec 19, 2025: Second Review Feedback</li>
+          <li>Dec 25, 2025: Second Revision Deadline</li>
+          <li>Dec 29, 2025: Acceptance Notification</li>
+        </ul>
+
+        <h3>Submission Guidelines</h3>
+        <p>
+          Please refer to the detailed <strong>Author Guidelines</strong> section on our website before submission.<br>
+          All manuscripts must use the official ABSI template and adhere to the required format and referencing style.
+        </p>
+
+        <p>📩 Submit your manuscript via email:</p>
+        <p><strong>jabsieditor@gmail.com</strong></p>
+        <p><em>(Email Subject: ABSI Submission – December 2025 – [Author Name])</em></p>
+      </div>
+    </div>
+
+    <!-- ===== REVIEW REGULATIONS MODAL ===== -->
+    <div class="about-detailed" id="reviewRegulationsModal">
+      <div class="about-modal">
+        <button class="close-btn1" id="closeReviewRegulations">&times;</button>
+        <h2>Review Regulations</h2>
+        <p>
+          <strong>Asia Business and Service Innovation (ABSI)</strong> follows the highest standards of academic
+          publishing ethics and editorial quality.
+          All submissions undergo a <strong>double-blind peer-review</strong> process, ensuring that neither the authors
+          nor the reviewers are aware of each other’s identities.
+          Each manuscript is evaluated by a minimum of two independent reviewers with expertise relevant to the topic.
+        </p>
+        <p>
+          Submitted manuscripts must be original, unpublished works that have not been submitted elsewhere. All articles
+          are screened for plagiarism and research integrity before entering the review process.
+          The journal adheres to the <strong>Committee on Publication Ethics (COPE)</strong> guidelines and reserves the
+          right to reject submissions that do not meet ethical or academic standards.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== RESEARCH ETHICS REGULATIONS MODAL ===== -->
+    <div class="about-detailed" id="researchEthicsModal">
+      <div class="about-modal">
+        <button class="close-btn1" id="closeResearchEthics">&times;</button>
+        <h2>Research Ethics Regulations</h2>
+        <p>
+          <strong>ABSI</strong> upholds the highest standards of academic integrity and research ethics. All authors,
+          reviewers, and editors are expected to follow these principles to ensure honesty, transparency, and
+          professionalism in scholarly publishing.
+        </p>
+
+        <h3>1. General Principles</h3>
+        <ul>
+          <li>All submissions must be original works that have not been published or submitted elsewhere.</li>
+          <li>Authors must ensure that their research is conducted and reported honestly and transparently.</li>
+          <li>Any case of fabrication, falsification, plagiarism, or improper authorship will be treated as research
+            misconduct.</li>
+          <li>The editorial board may take disciplinary action, including retraction of the article and notifying the
+            author’s institution.</li>
+        </ul>
+
+        <h3>2. Authorship</h3>
+        <ul>
+          <li>Only individuals who made a significant contribution to the research should be listed as authors.</li>
+          <li>All co-authors must approve the final manuscript before submission.</li>
+          <li>The corresponding author is responsible for ensuring correct authorship, affiliations, and communication
+            with the journal.</li>
+          <li>Acknowledgments may include people or institutions that provided funding, technical, or administrative
+            support but do not meet authorship criteria.</li>
+        </ul>
+
+        <h3>3. Research Integrity</h3>
+        <ul>
+          <li>Research methods must be described clearly enough for replication by other scholars.</li>
+          <li>Data must not be fabricated or manipulated in any way.</li>
+          <li>All sources, quotations, and secondary data must be properly cited according to APA 7th standards.</li>
+        </ul>
+
+        <h3>4. Research Involving Humans</h3>
+        <ul>
+          <li>Studies involving human participants must protect privacy, dignity, and voluntary participation.</li>
+          <li>Participants must receive full information about the study and provide written consent.</li>
+          <li>Participants can withdraw at any time without penalty.</li>
+          <li>The editorial board may request proof of IRB approval or consent forms if necessary.</li>
+        </ul>
+
+        <h3>5. Review and Publication Ethics</h3>
+        <ul>
+          <li>Authors should respond to reviewers’ comments professionally and constructively.</li>
+          <li>If disagreeing with a reviewer, authors must provide a clear, evidence-based explanation.</li>
+          <li>Published papers are protected under ABSI copyright policy — any reuse or distribution requires
+            permission.</li>
+        </ul>
+
+        <p>📘 <strong>ABSI</strong> adheres to the <strong>COPE (Committee on Publication Ethics)</strong> guidelines
+          for ethical publication practices.</p>
+      </div>
+    </div>
+
+
+
+    <!-- ===== SUBMIT ARTICLE MODAL ===== -->
+    <div class="about-detailed" id="submitArticleModal">
+      <div class="about-modal">
+        <button class="close-btn1" id="closeSubmitArticle">&times;</button>
+        <h2>Submit Your Article</h2>
+        <br>
+
+        <div class="coming-soon-banner">
+          <i class="fas fa-paper-plane"></i>
+          <h3>Online Submission System Coming Soon</h3>
+          <p>We're working on an enhanced submission experience for you</p>
+        </div>
+
+        <div class="submission-instructions">
+          <p style="margin-bottom: 1.5rem; color: #4a5568; font-size: 1.05rem;">
+            <strong>In the meantime, please submit your manuscript via email following these guidelines:</strong>
+          </p>
+
+          <div class="instruction-steps">
+            <div class="instruction-step">
+              <div class="instruction-step-header">
+                <div class="instruction-step-icon">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+                <h4>Preparation & Guidelines</h4>
+              </div>
+              <p>
+                Please refer to the detailed <strong><a href="#" id="openAuthorGuideFromSubmit">Author
+                    Guidelines</a></strong> section on our website before submission.<br>
+                All manuscripts must use the official ABSI template and adhere to the required format and referencing
+                style.
+              </p>
+            </div>
+
+            <div class="instruction-step">
+              <div class="instruction-step-header">
+                <div class="instruction-step-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h4>Email Submission Process</h4>
+              </div>
+              <p><strong>Submit your manuscript via email:</strong></p>
+              <div class="email-highlight">
+                📩 jabsieditor@gmail.com
+              </div>
+              <p><strong>Email Subject Format:</strong></p>
+              <div class="email-subject">
+                ABSI Submission – December 2025 – [Author Name]
+              </div>
+            </div>
+
+            <div class="instruction-step">
+              <div class="instruction-step-header">
+                <div class="instruction-step-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <h4>Review & Processing</h4>
+              </div>
+              <p>
+                After email submission, you will receive a confirmation within 2-3 business days.<br>
+                The editorial team will then begin the review process according to our standard procedures.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn primary" id="openAuthorGuideBtn">
+            <i class="fas fa-book-open"></i> View Author Guidelines
+          </button>
+          <button class="btn secondary"
+            onclick="location.href='mailto:jabsieditor@gmail.com?subject=ABSI Submission – December 2025 – '">
+            <i class="fas fa-paper-plane"></i> Compose Email
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-col">
+          <h4>For Authors <span class="underline"></span></h4>
+          <ul>
+            <li><a href="#">Submit Article</a></li>
+            <li><a href="#">Guide for Authors</a></li>
+            <li><a href="#">Editorial Policies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>For Readers <span class="underline"></span></h4>
+          <ul>
+            <li><a href="#">Current Issue</a></li>
+            <li><a href="#">Archives</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact <span class="underline"></span></h4>
+          <ul>
+            <li><a href="#">Email : jabsieditor@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>ISSN: Coming Soon</p>
+          <p>© 2025 Journal of Asia Business Service Innovation (ABSI). All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<section id="editorial-board-section" class="editorial-board-clean hidden">
+        <h1>Editorial Board <a href="#" class="close-btn">&times;</a></h1>
+        <p>The Asia Business and Service Innovation (ABSI) editorial team is composed of distinguished scholars and
+          professionals dedicated to ensuring the highest academic standards, research integrity, and editorial
+          excellence. The editorial board is structured as follows:</p>
+        <div class="role-section">
+          <h2>Editor-in-Chief</h2>
+          <div class="editor-entry">
+            <span class="editor-name">Hak Seon Kim, South Korea</span>
+            <!-- <span class="editor-details">
+            Dean, Kyungsung University Global College (KSGC)<br>
+            PhD, Texas Tech University, USA<br>
+            MA, Seoul National University, Korea
+          </span> -->
+          </div>
+        </div>
+        <div class="role-section">
+          <h2>Editorial Secretary</h2>
+          <div class="editor-entry">
+            <span class="editor-name">Angellie Williady, South Korea</span>
+            <!-- <span class="editor-details">
+            Kyungsung University, South Korea
+          </span> -->
+          </div>
+        </div>
+
+        <hr class="main-role-separator">
+
+        <div class="role-section">
+          <h2>Regional Editor</h2>
+          <div class="editor-entry">
+            <span class="editor-name">East Asia</span>
+            <span class="editor-details">
+              China, Japan, South Korea, Taiwan, Hong Kong
+            </span>
+          </div>
+          <div class="editor-entry">
+            <span class="editor-name"> Southeast Asia </span>
+            <span class="editor-details">
+              Indonesia, Philippines, Thailand, Vietnam, Malaysia, Singapore
+            </span>
+          </div>
+          <div class="editor-entry">
+            <span class="editor-name">South Asia </span>
+            <span class="editor-details">
+              India, Bangladesh, Sri Lanka, Nepal, Pakistan
+            </span>
+          </div>
+          <div class="editor-entry">
+            <span class="editor-name">Central Asia</span>
+            <span class="editor-details">
+              Kazakhstan, Uzbekistan, Kyrgyzstan
+            </span>
+          </div>
+          <div class="editor-entry">
+            <span class="editor-name">Middle East / West Asia </span>
+            <span class="editor-details">
+              United Arab Emirates, Saudi Arabia, Israel, Turkey </span>
+          </div>
+        </div>
+
+        <hr class="main-role-separator">
+
+        <div class="role-section">
+          <h2>Editorial Board</h2>
+          <div class="associate-editors-grid">
+            <!-- Column 1 -->
+            <div>
+              <div class="editor-entry">
+                <span class="editor-name">Hyeon-Jeong Helena Ban , South Korea</span>
+                <!-- <span class="editor-details">Kyungsung University ,South Korea</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Jue Wang , South Korea</span>
+                <!-- <span class="editor-details">Kyungsung University, South Korea</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Yejin Kim , South Korea</span>
+                <!-- <span class="editor-details">Dongeui University, South Korea</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name"> Hayeon Choi , USA</span>
+
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name"> Jisu Han , South Korea</span>
+                <!-- <span class="editor-details">Chodang University, South Korea</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Sang Hyeop Lee , South Korea</span>
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Hyo jin Kim , South Korea</span>
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Sang Mok Lee , South Korea</span>
+              </div>
+            </div>
+            <!-- Column 2 -->
+            <div>
+              <div class="editor-entry">
+                <span class="editor-name">Narariya Dita Handani, Indonesia</span>
+                <!-- <span class="editor-details">Wijaya Kusuma University, Indonesia</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Shuting Tao , China</span>
+                <!-- <span class="editor-details">Henan Normal University, China</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Xiaobin Zhang, China</span>
+                <!-- <span class="editor-details">Shanxi Vocational College of Tourism, China</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Jun Yu, China</span>
+                <!-- <span class="editor-details">Huangshan University, China</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Jinwon Kim, USA</span>
+                <!-- <span class="editor-details">University of Florida, USA</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Harold S Lee, USA</span>
+                <!-- <span class="editor-details">University of North Texas, USA</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Eun Kyong Choi, USA</span>
+                <!-- <span class="editor-details">The University of Mississippi USA</span> -->
+              </div>
+              <div class="editor-entry">
+                <span class="editor-name">Min Hwa Lee, Japan</span>
+                <!-- <span class="editor-details">Osaka Seikei University, Japan</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="role-section">
+          <h2>Advisory Board</h2>
+          <div class="editor-entry">
+            <span class="editor-name">Timothy Jeonglyeol Lee, Macau</span>
+          </div>
+      </section>
