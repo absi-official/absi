@@ -1,6 +1,6 @@
 /* CSS Variables and Global Styles */
 :root {
-    --container: 1300px;
+    --container: 1400px;
     --blue-100: #e0e8ed;
     --blue-300: #bbcfda;
     --accent: #bcd7e7;
@@ -38,6 +38,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.5;
     font-size: 14px;
+}
+li ul li{
+    list-style: none;
 }
 
 /* Container */
