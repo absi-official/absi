@@ -224,7 +224,7 @@ const articlesData = {
       title: "Key Drivers of Customer Experience at the World’s Top 10 Airports: A Big Data Analysis Through Online Reviews",
       authors: "Zakwana Hossain Promy, Seieun Kim, Hyun-Jeong Ban",
       abstract: "Airports have evolved from mere transportation nodes into complex service environments where passengers’ lived experience shapes perceptions, word-of-mouth, and overall travel memory.",
-      pdfUrl: "./assets/Document/003/R1 Manuscript 003.pdf"
+      pdfUrl: "./assets/Document/003/R1  Manuscript 003.pdf"
     },
      {
       id: "AB2512004",
@@ -621,3 +621,4 @@ window.ArticleManager = {
   removeArticle,
   renderArticles
 };
+
