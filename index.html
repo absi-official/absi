@@ -46,8 +46,9 @@
           <li class="dropdown">
             <a href="" class="dropdown-toggle">Articles & Issues <span class="dropdown-indicator"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#" data-target="latest">Latest Issue</a></li>
               <li><a href="#" data-target="all-issues">All Issues</a></li>
+              <li><a href="#" data-target="issue-june-2025">June 2025 Issue</a></li>
+              <li><a href="#" data-target="issue-dec-2025">Dec 2025 Issue</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -213,24 +214,28 @@
           <h2>Articles <span class="underline"></span></h2>
 
           <div class="tabs">
-            <button class="tab-btn active" id="all-articles-btn" data-target="all-issues">All Issue</button>
-            <button class="tab-btn" data-target="latest">Latest</button>
+            <button class="tab-btn active" data-target="all-issues">All Issues</button>
+            <button class="tab-btn" data-target="issue-june-2025">June 2025</button>
+            <button class="tab-btn" data-target="issue-dec-2025">Dec 2025</button>
             <button class="tab-btn" data-target="upcoming">Upcoming</button>
           </div>
         </div>
 
         <div class="articles-grid">
-          <div class="tab-content hidden" id="latest">
-            <!-- Articles will be dynamically loaded here -->
+          <div class="tab-content" id="all-issues">
+            <!-- Combined list of all issues (June + Dec) -->
           </div>
-
+          <div class="tab-content" id="issue-june-2025">
+            <!-- June 30, 2025 issue articles will be loaded here -->
+          </div>
+          <div class="tab-content hidden" id="issue-dec-2025">
+            <!-- December 25, 2025 demo issue articles will be loaded here -->
+          </div>
           <div class="tab-content hidden" id="upcoming">
             <!-- Articles will be dynamically loaded here -->
           </div>
-          <div class="tab-content" id="all-issues">
-            <!-- Articles will be dynamically loaded here -->
-          </div>
         </div>
+        <div id="articles-pagination-global" class="articles-pagination-global"></div>
       </section>
       <!-- Calls for papers -->
       <!-- <section class="calls">
@@ -473,10 +478,10 @@
               <div class="email-subject">"ABSI Submission – [Author Name] – [Article Title]"</div>
             </li>
             <li>Include the following files:
-              <ol>
+              <ul>
                 <li>Completed manuscript (in ABSI template)</li>
                 <li>Cover letter (briefly summarizing contribution and fit to journal)</li>
-              </ol>
+              </ul>
             </li>
             <li>Author information should not appear in the manuscript file</li>
           </ul>
@@ -735,8 +740,7 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>ISSN: 3092-0558</p>
-          <p>eISSN: 3092-1112 </p>
+          <p>ISSN: Coming Soon</p>
           <p>© 2025 Journal of Asia Business Service Innovation (ABSI). All rights reserved.</p>
         </div>
       </div>
@@ -749,4 +753,3 @@
 </body>
 
 </html>
-
